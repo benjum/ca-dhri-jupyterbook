@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.1/dist/embed-amd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="CaliDHRI Day 2: Afternoon" href="02-TopicModeling-Participant.html" />
@@ -219,7 +221,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/benjum/ca-dhri-jupyterbook/master?urlpath=tree/Day2/01-TextAnalysis.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/benjum/ca-dhri-jupyterbook/main?urlpath=tree/Day2/01-TextAnalysis.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../_static/images/logo_binder.svg"
@@ -227,6 +229,9 @@ const thebe_selector_output = ".output, .cell_output"
         
         
         
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
         
     </div>
 </div>
@@ -897,8 +902,8 @@ orable by honorable administration of law . Warren F. Day , D.D. , senior pasto
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
+            repo: "benjum/ca-dhri-jupyterbook",
+            ref: "main",
         },
         codeMirrorConfig: {
             theme: "abcdef",
