@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CaliDHRI Day 2: Afternoon &#8212; CaliDHRI Book</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,28 +31,34 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script >
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -91,7 +97,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Day 1
  </span>
@@ -113,7 +119,7 @@
   </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Day 2
  </span>
@@ -175,7 +181,7 @@
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -226,7 +232,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -420,7 +426,204 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>CaliDHRI Day 2: Afternoon</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#outline">
+   Outline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduction-to-topic-modeling">
+   Introduction to topic modeling
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#what-is-topic-modeling-anyway">
+     What is topic modeling anyway?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#uses-for-topic-modeling">
+     Uses for topic modeling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#topics-are-probabilities-of-aboutness">
+     Topics are probabilities of aboutness
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#research-example">
+     Research example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#this-notebook">
+   This notebook
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gensim">
+     Gensim
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set-up">
+     Set up
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#understand-and-import-the-data">
+   Understand and import the data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-liberator-dataset">
+     The Liberator dataset
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loading-our-data">
+     Loading our data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#create-list-of-our-liberator-text">
+     Create list of our Liberator text
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#call-items-in-listoflib">
+     Call items in listOfLib
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prepare-the-data">
+   Prepare the data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steps-to-take">
+     Steps to take:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remove-stopwords">
+     Remove stopwords
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tokenize">
+     Tokenize
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#lemmatize">
+     Lemmatize
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#the-processed-text">
+     The processed text
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#structure-the-data">
+   Structure the data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-dictionary-bag">
+     List –&gt; Dictionary –&gt; Bag
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#building-our-corpus">
+     Building our corpus
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-the-model-and-view-topics">
+   Run the model and view topics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parameters">
+     Parameters
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#breakout-activity">
+   Breakout activity
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-topics">
+   Visualize topics
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#another-option">
+     Another option?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#store-the-topics-in-a-list">
+     Store the topics in a list
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#work-with-pandas-dataframes-to-develop-the-visualizations">
+     Work with Pandas dataframes to develop the visualizations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modify-our-dataframes-to-create-another-visualization">
+     Modify our dataframes to create another visualization
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Breakout activity
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wrap-up">
+   Wrap-up
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="calidhri-day-2-afternoon">
@@ -650,26 +853,28 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">4835</span><span class="n">beb4db4d</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">nltk</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">sent_tokenize</span><span class="p">,</span> <span class="n">word_tokenize</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;nltk&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;stopwords&#39;</span><span class="p">)</span>
 <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;punkt&#39;</span><span class="p">)</span>
 <span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;wordnet&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[nltk_data] Downloading package stopwords to
+[nltk_data]     /Users/benjaminwinjum/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to
+[nltk_data]     /Users/benjaminwinjum/nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     /Users/benjaminwinjum/nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
 </div>
@@ -682,6 +887,11 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">standardStop</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
 <span class="nb">print</span> <span class="p">(</span><span class="n">standardStop</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;i&#39;, &#39;me&#39;, &#39;my&#39;, &#39;myself&#39;, &#39;we&#39;, &#39;our&#39;, &#39;ours&#39;, &#39;ourselves&#39;, &#39;you&#39;, &quot;you&#39;re&quot;, &quot;you&#39;ve&quot;, &quot;you&#39;ll&quot;, &quot;you&#39;d&quot;, &#39;your&#39;, &#39;yours&#39;, &#39;yourself&#39;, &#39;yourselves&#39;, &#39;he&#39;, &#39;him&#39;, &#39;his&#39;, &#39;himself&#39;, &#39;she&#39;, &quot;she&#39;s&quot;, &#39;her&#39;, &#39;hers&#39;, &#39;herself&#39;, &#39;it&#39;, &quot;it&#39;s&quot;, &#39;its&#39;, &#39;itself&#39;, &#39;they&#39;, &#39;them&#39;, &#39;their&#39;, &#39;theirs&#39;, &#39;themselves&#39;, &#39;what&#39;, &#39;which&#39;, &#39;who&#39;, &#39;whom&#39;, &#39;this&#39;, &#39;that&#39;, &quot;that&#39;ll&quot;, &#39;these&#39;, &#39;those&#39;, &#39;am&#39;, &#39;is&#39;, &#39;are&#39;, &#39;was&#39;, &#39;were&#39;, &#39;be&#39;, &#39;been&#39;, &#39;being&#39;, &#39;have&#39;, &#39;has&#39;, &#39;had&#39;, &#39;having&#39;, &#39;do&#39;, &#39;does&#39;, &#39;did&#39;, &#39;doing&#39;, &#39;a&#39;, &#39;an&#39;, &#39;the&#39;, &#39;and&#39;, &#39;but&#39;, &#39;if&#39;, &#39;or&#39;, &#39;because&#39;, &#39;as&#39;, &#39;until&#39;, &#39;while&#39;, &#39;of&#39;, &#39;at&#39;, &#39;by&#39;, &#39;for&#39;, &#39;with&#39;, &#39;about&#39;, &#39;against&#39;, &#39;between&#39;, &#39;into&#39;, &#39;through&#39;, &#39;during&#39;, &#39;before&#39;, &#39;after&#39;, &#39;above&#39;, &#39;below&#39;, &#39;to&#39;, &#39;from&#39;, &#39;up&#39;, &#39;down&#39;, &#39;in&#39;, &#39;out&#39;, &#39;on&#39;, &#39;off&#39;, &#39;over&#39;, &#39;under&#39;, &#39;again&#39;, &#39;further&#39;, &#39;then&#39;, &#39;once&#39;, &#39;here&#39;, &#39;there&#39;, &#39;when&#39;, &#39;where&#39;, &#39;why&#39;, &#39;how&#39;, &#39;all&#39;, &#39;any&#39;, &#39;both&#39;, &#39;each&#39;, &#39;few&#39;, &#39;more&#39;, &#39;most&#39;, &#39;other&#39;, &#39;some&#39;, &#39;such&#39;, &#39;no&#39;, &#39;nor&#39;, &#39;not&#39;, &#39;only&#39;, &#39;own&#39;, &#39;same&#39;, &#39;so&#39;, &#39;than&#39;, &#39;too&#39;, &#39;very&#39;, &#39;s&#39;, &#39;t&#39;, &#39;can&#39;, &#39;will&#39;, &#39;just&#39;, &#39;don&#39;, &quot;don&#39;t&quot;, &#39;should&#39;, &quot;should&#39;ve&quot;, &#39;now&#39;, &#39;d&#39;, &#39;ll&#39;, &#39;m&#39;, &#39;o&#39;, &#39;re&#39;, &#39;ve&#39;, &#39;y&#39;, &#39;ain&#39;, &#39;aren&#39;, &quot;aren&#39;t&quot;, &#39;couldn&#39;, &quot;couldn&#39;t&quot;, &#39;didn&#39;, &quot;didn&#39;t&quot;, &#39;doesn&#39;, &quot;doesn&#39;t&quot;, &#39;hadn&#39;, &quot;hadn&#39;t&quot;, &#39;hasn&#39;, &quot;hasn&#39;t&quot;, &#39;haven&#39;, &quot;haven&#39;t&quot;, &#39;isn&#39;, &quot;isn&#39;t&quot;, &#39;ma&#39;, &#39;mightn&#39;, &quot;mightn&#39;t&quot;, &#39;mustn&#39;, &quot;mustn&#39;t&quot;, &#39;needn&#39;, &quot;needn&#39;t&quot;, &#39;shan&#39;, &quot;shan&#39;t&quot;, &#39;shouldn&#39;, &quot;shouldn&#39;t&quot;, &#39;wasn&#39;, &quot;wasn&#39;t&quot;, &#39;weren&#39;, &quot;weren&#39;t&quot;, &#39;won&#39;, &quot;won&#39;t&quot;, &#39;wouldn&#39;, &quot;wouldn&#39;t&quot;]
 </pre></div>
 </div>
 </div>
@@ -701,6 +911,11 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">myStopWords</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">punctuation</span><span class="p">)</span> <span class="o">+</span> <span class="n">standardStop</span> <span class="o">+</span> <span class="n">extraStop</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">myStopWords</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;!&#39;, &#39;&quot;&#39;, &#39;#&#39;, &#39;$&#39;, &#39;%&#39;, &#39;&amp;&#39;, &quot;&#39;&quot;, &#39;(&#39;, &#39;)&#39;, &#39;*&#39;, &#39;+&#39;, &#39;,&#39;, &#39;-&#39;, &#39;.&#39;, &#39;/&#39;, &#39;:&#39;, &#39;;&#39;, &#39;&lt;&#39;, &#39;=&#39;, &#39;&gt;&#39;, &#39;?&#39;, &#39;@&#39;, &#39;[&#39;, &#39;\\&#39;, &#39;]&#39;, &#39;^&#39;, &#39;_&#39;, &#39;`&#39;, &#39;{&#39;, &#39;|&#39;, &#39;}&#39;, &#39;~&#39;, &#39;i&#39;, &#39;me&#39;, &#39;my&#39;, &#39;myself&#39;, &#39;we&#39;, &#39;our&#39;, &#39;ours&#39;, &#39;ourselves&#39;, &#39;you&#39;, &quot;you&#39;re&quot;, &quot;you&#39;ve&quot;, &quot;you&#39;ll&quot;, &quot;you&#39;d&quot;, &#39;your&#39;, &#39;yours&#39;, &#39;yourself&#39;, &#39;yourselves&#39;, &#39;he&#39;, &#39;him&#39;, &#39;his&#39;, &#39;himself&#39;, &#39;she&#39;, &quot;she&#39;s&quot;, &#39;her&#39;, &#39;hers&#39;, &#39;herself&#39;, &#39;it&#39;, &quot;it&#39;s&quot;, &#39;its&#39;, &#39;itself&#39;, &#39;they&#39;, &#39;them&#39;, &#39;their&#39;, &#39;theirs&#39;, &#39;themselves&#39;, &#39;what&#39;, &#39;which&#39;, &#39;who&#39;, &#39;whom&#39;, &#39;this&#39;, &#39;that&#39;, &quot;that&#39;ll&quot;, &#39;these&#39;, &#39;those&#39;, &#39;am&#39;, &#39;is&#39;, &#39;are&#39;, &#39;was&#39;, &#39;were&#39;, &#39;be&#39;, &#39;been&#39;, &#39;being&#39;, &#39;have&#39;, &#39;has&#39;, &#39;had&#39;, &#39;having&#39;, &#39;do&#39;, &#39;does&#39;, &#39;did&#39;, &#39;doing&#39;, &#39;a&#39;, &#39;an&#39;, &#39;the&#39;, &#39;and&#39;, &#39;but&#39;, &#39;if&#39;, &#39;or&#39;, &#39;because&#39;, &#39;as&#39;, &#39;until&#39;, &#39;while&#39;, &#39;of&#39;, &#39;at&#39;, &#39;by&#39;, &#39;for&#39;, &#39;with&#39;, &#39;about&#39;, &#39;against&#39;, &#39;between&#39;, &#39;into&#39;, &#39;through&#39;, &#39;during&#39;, &#39;before&#39;, &#39;after&#39;, &#39;above&#39;, &#39;below&#39;, &#39;to&#39;, &#39;from&#39;, &#39;up&#39;, &#39;down&#39;, &#39;in&#39;, &#39;out&#39;, &#39;on&#39;, &#39;off&#39;, &#39;over&#39;, &#39;under&#39;, &#39;again&#39;, &#39;further&#39;, &#39;then&#39;, &#39;once&#39;, &#39;here&#39;, &#39;there&#39;, &#39;when&#39;, &#39;where&#39;, &#39;why&#39;, &#39;how&#39;, &#39;all&#39;, &#39;any&#39;, &#39;both&#39;, &#39;each&#39;, &#39;few&#39;, &#39;more&#39;, &#39;most&#39;, &#39;other&#39;, &#39;some&#39;, &#39;such&#39;, &#39;no&#39;, &#39;nor&#39;, &#39;not&#39;, &#39;only&#39;, &#39;own&#39;, &#39;same&#39;, &#39;so&#39;, &#39;than&#39;, &#39;too&#39;, &#39;very&#39;, &#39;s&#39;, &#39;t&#39;, &#39;can&#39;, &#39;will&#39;, &#39;just&#39;, &#39;don&#39;, &quot;don&#39;t&quot;, &#39;should&#39;, &quot;should&#39;ve&quot;, &#39;now&#39;, &#39;d&#39;, &#39;ll&#39;, &#39;m&#39;, &#39;o&#39;, &#39;re&#39;, &#39;ve&#39;, &#39;y&#39;, &#39;ain&#39;, &#39;aren&#39;, &quot;aren&#39;t&quot;, &#39;couldn&#39;, &quot;couldn&#39;t&quot;, &#39;didn&#39;, &quot;didn&#39;t&quot;, &#39;doesn&#39;, &quot;doesn&#39;t&quot;, &#39;hadn&#39;, &quot;hadn&#39;t&quot;, &#39;hasn&#39;, &quot;hasn&#39;t&quot;, &#39;haven&#39;, &quot;haven&#39;t&quot;, &#39;isn&#39;, &quot;isn&#39;t&quot;, &#39;ma&#39;, &#39;mightn&#39;, &quot;mightn&#39;t&quot;, &#39;mustn&#39;, &quot;mustn&#39;t&quot;, &#39;needn&#39;, &quot;needn&#39;t&quot;, &#39;shan&#39;, &quot;shan&#39;t&quot;, &#39;shouldn&#39;, &quot;shouldn&#39;t&quot;, &#39;wasn&#39;, &quot;wasn&#39;t&quot;, &#39;weren&#39;, &quot;weren&#39;t&quot;, &#39;won&#39;, &quot;won&#39;t&quot;, &#39;wouldn&#39;, &quot;wouldn&#39;t&quot;, &#39;``&#39;, &quot;&#39;&#39;&quot;, &quot;&#39;re&quot;, &quot;&#39;s&quot;, &quot;&#39;re&quot;, &#39;``&#39;, &quot;&#39;&#39;&quot;, &quot;&#39;ll&quot;, &#39;--&#39;, &quot;&#39;&#39;&quot;, &#39;...&#39;, &quot;n&#39;t&quot;, &#39;one&#39;, &#39;would&#39;, &#39;use&#39;, &#39;subject&#39;, &#39;from&#39;, &quot;&#39;m&quot;, &quot;&#39;ve&quot;, &#39;los&#39;, &#39;angeles&#39;, &#39;liberator&#39;, &#39;phone&#39;, &#39;street&#39;, &#39;mrs.&#39;]
 </pre></div>
 </div>
 </div>
@@ -746,6 +961,35 @@
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;-devoted&#39;,
+ &#39;good&#39;,
+ &#39;government&#39;,
+ &#39;advanement&#39;,
+ &#39;afro-&#39;,
+ &#39;america&#39;,
+ &#39;__los&#39;,
+ &#39;cal.&#39;,
+ &#39;august&#39;,
+ &#39;spring&#39;,
+ &#39;suit&#39;,
+ &#39;ready&#39;,
+ &#39;mensel&#39;,
+ &#39;^eased&#39;,
+ &#39;style&#39;,
+ &#39;fine&#39;,
+ &#39;appearance&#39;,
+ &#39;spnn&#39;,
+ &#39;slut&#39;,
+ &#39;want&#39;,
+ &#39;come&#39;,
+ &#39;whether&#39;,
+ &#39;ready&#39;,
+ &#39;make&#39;,
+ &#39;purchase&#39;]
+</pre></div>
+</div>
+</div>
 </div>
 <p>What other steps might we have wanted to take to prepare our data?</p>
 </div>
@@ -762,6 +1006,17 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">gensim</span>
 <span class="kn">from</span> <span class="nn">gensim</span> <span class="kn">import</span> <span class="n">corpora</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">Input In [16],</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">gensim</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">gensim</span> <span class="kn">import</span> <span class="n">corpora</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;gensim&#39;
 </pre></div>
 </div>
 </div>
@@ -1090,36 +1345,28 @@
 
               </div>
               
-        
             
-
-
-
-<div class='prev-next-bottom'>
-    
-
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By CaliDHRI<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By CaliDHRI<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
 </main>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
