@@ -1,0 +1,853 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaliDHRI Day 2: Afternoon &#8212; CaliDHRI Book</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Overview" href="01-TextAnalysis.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/cropped-cropped-final_CALIDRHI_logo-1.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CaliDHRI Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to the Cali-DHRI Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Day 1
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Day1/01-NavigatingTheNotebook.html">
+   Navigating Jupyter Lab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Day1/02-JupyterandPython.html">
+   Week 1: Jupyter and Python
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Day1/03-Mapping.html">
+   Visualizing Black Histories in California
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Day 2
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-TextAnalysis.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   CaliDHRI Day 2: Afternoon
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Day2/02-TopicModeling-Participant.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/benjum/ca-dhri-jupyterbook"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/benjum/ca-dhri-jupyterbook/issues/new?title=Issue%20on%20page%20%2FDay2/02-TopicModeling-Participant.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/benjum/ca-dhri-jupyterbook/master?urlpath=tree/Day2/02-TopicModeling-Participant.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#topic-modeling-with-gensim">
+   Topic Modeling with Gensim
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#topics-are-probabilities-of-aboutness">
+     Topics are probabilities of aboutness
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#set-up">
+   Set up
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-data">
+   The data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#prepare-the-data">
+   Prepare the data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-the-bag-of-words">
+   Create the bag-of-words
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#run-the-model-and-view-topics">
+   Run the model and view topics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-topics">
+   Visualize topics
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="calidhri-day-2-afternoon">
+<h1>CaliDHRI Day 2: Afternoon<a class="headerlink" href="#calidhri-day-2-afternoon" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="topic-modeling-with-gensim">
+<h2>Topic Modeling with Gensim<a class="headerlink" href="#topic-modeling-with-gensim" title="Permalink to this headline">¶</a></h2>
+<p>Topic modeling is a popular approach to “distant reading” a corpus. It is a kind of unsupervised machine learning. Unlike in supervised methods where the human provides labeled training data from which the machine learns, in unsupervised machine learning, the machine learns from unlabeled data. There are benefits and drawbacks to both approaches. Topic modeling is a useful tool for understanding the subject matter of a dataset – sometimes one that is too large for close reading or as a supplement to close reading.</p>
+<p>We will be doing LDA topic modeling. LDA stands for latent Dirichlet allocation. Don’t get hung up on the terminology!</p>
+<div class="section" id="topics-are-probabilities-of-aboutness">
+<h3>Topics are probabilities of aboutness<a class="headerlink" href="#topics-are-probabilities-of-aboutness" title="Permalink to this headline">¶</a></h3>
+<p>Here’s how the basic logic of LDA topic modeling works:</p>
+<ul class="simple">
+<li><p>Start with a corpus of documents with any pre-processing/cleaning done.</p></li>
+<li><p>Represent each document as a bag-of-words. In the BOW model, word order is lost and it just matters that the word occured within the bag (document).</p></li>
+<li><p>The BOWs are represented as a term-document matrix consisting of columns and rows for each word’s occurance.</p></li>
+<li><p>The term-document matrices are fed to the algorithm. Each word in each document is compared (Is Word1 in Bag1? Yes. Is Word1 in Bag2? Yes. Is Word1 in Bag3? No. Is Word2 in Bag1? No. Is Word2 in Bag2? Yes. Is Word2 in Bag3? No. And so on.)</p></li>
+<li><p>The computer learns from this process which words are likely to occur within the same document. The logic of LDA is that words that co-occur within a document are likely about the same thing.</p></li>
+<li><p>The algorithm generates topics, which are probablistic groupings of words that are likely to co-occur within the corpus.</p></li>
+<li><p>The algorithm does not tell you want the topics are about and it does not name the topics. That’s up to the human!</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="set-up">
+<h2>Set up<a class="headerlink" href="#set-up" title="Permalink to this headline">¶</a></h2>
+<p>In this notebook, we’ll be using several libraries to prepare text from The Liberator for the algorithm, create topic models, and visualize the topics:</p>
+<ul class="simple">
+<li><p>NLTK: data preparation</p></li>
+<li><p>Gensim: topic modeling</p></li>
+<li><p>Altair: visualization</p></li>
+<li><p>ipywidgets: visualization</p></li>
+<li><p>Matplotlib: visualization</p></li>
+</ul>
+<p>These are already installed on JupyterHub, but if you were working locally, you’d want to make sure you installed them before trying to use them in your notebook.</p>
+</div>
+<div class="section" id="the-data">
+<h2>The data<a class="headerlink" href="#the-data" title="Permalink to this headline">¶</a></h2>
+<p>Here are the modules we’ll use to load our data into the notebook:</p>
+<ul class="simple">
+<li><p>Glob</p></li>
+</ul>
+<p>The import statements below will make them available for us to use in our notebook.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we need to direct the notebook to the 187 files of the Liberator we’ll be topic modeling. Each file is an issue of the Liberator. We haven’t done any cleaning of the OCR for these files.</p>
+<p>Learn more about the Liberator in <a class="reference external" href="https://docs.google.com/presentation/d/1gwAISOnn3Evq_LkX_0vhsYy0iTv7s5GHLUEGVKzN-tc/edit?usp=sharing">these slides</a>.</p>
+<p>First we create a variable called directory_path, and we set that to the directory name where our files are stored. Then we can use glob, a handy module to navigate a directory structure, to set all of the files under directory_path to another variable called text files.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">directory_path</span> <span class="o">=</span> <span class="s1">&#39;libSeparate&#39;</span>
+<span class="n">text_files</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">directory_path</span><span class="si">}</span><span class="s2">/*&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s check to see that the files were brought in. We can use the list index to call the first text file.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># change the number in the brackets to see a different file</span>
+<span class="n">text_files</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;libSeparate/1912-09-20.txt&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>The next step is to take those text files and make them into a Python list. First we create an empty list, listOfLib, and using a for loop, we iterate through the files in text_files, opening and reading them, and then apending them to listOfLib.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">listOfLib</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">text_files</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">listOfLib</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    <span class="k">except</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s check to make sure we got all the files. We can use the notation len() to see the length of both text_files and listOfLib are. The length is the number of items in the list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">text_files</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>101
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">listOfLib</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>101
+</pre></div>
+</div>
+</div>
+</div>
+<p>With the data now stored in our listOfLib, we can also call each of the items in the list using the notation below. The first brackets refer to a specific item in our list, in this case the 10th item. (Python starts counting at 0.) The second brackets are optional, and they are restricting what is returned to a slice of the data–characters 0 to 300. If we didn’t slice, then we’d return the text of one entire issue of the Liberator.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">listOfLib</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">300</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;THE LIBERATOR \n\nA Weekly Newspaper Devoted to the Cause of Good Government and the Advancement of the American Negro. \nVol. X 5 cts. a copy LOS ANGELES, CAL., MAY 31, 1912 $1.50 a year No. 28 \n\n\n“I would take that action over again” \nRoosevelt on Brownsville \n\n\nROOSEVELT “SMOKED OUT” \nON BROWNSVILLE&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="prepare-the-data">
+<h2>Prepare the data<a class="headerlink" href="#prepare-the-data" title="Permalink to this headline">¶</a></h2>
+<p>Once the data is loaded and in our listOfLib, then we can move to preparing it for analysis. We are going to remove the stopwords, tokenize, and lemmatize the text. For this we will utilize NLTK’s built-in stopwords, tokenizer, and lemmatizer.</p>
+<p>We import the NLTK modules below, plus a module called punctuation that will allow us to remove punctuation from the text.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">sent_tokenize</span><span class="p">,</span> <span class="n">word_tokenize</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
+<span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">8</span><span class="o">-</span><span class="mi">9</span><span class="n">a4d68a6d71f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">sent_tokenize</span><span class="p">,</span> <span class="n">word_tokenize</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">from</span> <span class="nn">string</span> <span class="kn">import</span> <span class="n">punctuation</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;nltk&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s check out the NLTK stopword list.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">standardStop</span> <span class="o">=</span> <span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">standardStop</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The standard stopwords may not be sufficient for the text we will analysis from the Liberator. We can add stopwords by creating a list called extraStop that we will combine with the standard list in a new list. The new list will be called myStopWords, and it combines the punctuation marks, standardStop, and extraStop lists.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">extraStop</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;``&#39;</span><span class="p">,</span><span class="s2">&quot;&#39;&#39;&quot;</span><span class="p">,</span><span class="s2">&quot;&#39;re&quot;</span><span class="p">,</span><span class="s2">&quot;&#39;s&quot;</span><span class="p">,</span><span class="s2">&quot;&#39;re&quot;</span><span class="p">,</span><span class="s1">&#39;``&#39;</span><span class="p">,</span><span class="s2">&quot;&#39;&#39;&quot;</span><span class="p">,</span><span class="s2">&quot;&#39;ll&quot;</span><span class="p">,</span><span class="s2">&quot;--&quot;</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\&#39;\&#39;</span><span class="s2">&quot;</span><span class="p">,</span><span class="s2">&quot;...&quot;</span><span class="p">,</span> <span class="s2">&quot;n</span><span class="se">\&#39;</span><span class="s2">t&quot;</span><span class="p">,</span><span class="s1">&#39;one&#39;</span><span class="p">,</span><span class="s1">&#39;would&#39;</span><span class="p">,</span><span class="s1">&#39;use&#39;</span><span class="p">,</span><span class="s1">&#39;subject&#39;</span><span class="p">,</span><span class="s1">&#39;from&#39;</span><span class="p">,</span>
+             <span class="s2">&quot;</span><span class="se">\&#39;</span><span class="s2">m&quot;</span><span class="p">,</span><span class="s2">&quot;</span><span class="se">\&#39;</span><span class="s2">ve&quot;</span><span class="p">,</span> <span class="s2">&quot;los&quot;</span><span class="p">,</span> <span class="s2">&quot;angeles&quot;</span><span class="p">,</span> <span class="s2">&quot;liberator&quot;</span><span class="p">,</span> <span class="s2">&quot;phone&quot;</span><span class="p">,</span> <span class="s2">&quot;street&quot;</span><span class="p">,</span> <span class="s2">&quot;mrs.&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">myStopWords</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">punctuation</span><span class="p">)</span> <span class="o">+</span> <span class="n">standardStop</span> <span class="o">+</span> <span class="n">extraStop</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myStopWords</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we’ll create a function to tokenize and lemmatize the text. As you’ll remember from this morning, lemmatization groups together forms of a word.</p>
+<p>Let’s take note of all the preprocessing happening in this function:</p>
+<ul class="simple">
+<li><p>We create 2 empty lists called listOfLibWords and allLibWords</p></li>
+<li><p>Then, in a for loop, we go through each of the Liberators stored in our listOfLib and…</p>
+<ul>
+<li><p>For ever word, we lowercase and tokenize it if it is not on myStopWords and it has more than 3 letters</p></li>
+<li><p>The tokens are stored in a temporary list called processedText</p></li>
+<li><p>We append the processedText list to the listOfLibWords</p></li>
+</ul>
+</li>
+<li><p>And in another for loop, we go through each token in processedText and add it to the allLibWords list</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">listOfLibWords</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">allLibWords</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">listOfLib</span><span class="p">:</span>
+    <span class="n">processedText</span> <span class="o">=</span> <span class="p">[</span><span class="n">w</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">i</span><span class="o">.</span><span class="n">lower</span><span class="p">())</span> <span class="k">if</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">myStopWords</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">]</span>
+    <span class="n">listOfLibWords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">processedText</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">processedText</span><span class="p">:</span>
+        <span class="n">allLibWords</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then we need to lemmatize the tokens in allLibWords. We’ll create yet another empty list called listOfLemWords. We’ll name a variable wordnet_lemmatizer and set it to NLTK’s WordNetLemmatizer. Then in another for loop, we’ll iterate through the tokens in listOfLibWords and add them to listOfLemWords once they have been lemmatized.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">listOfLemWords</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">wordnet_lemmatizer</span> <span class="o">=</span> <span class="n">WordNetLemmatizer</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">listOfLibWords</span><span class="p">:</span>
+    <span class="n">listOfLemWords</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">wordnet_lemmatizer</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s take a look at a slice of tokens from list item 6.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">listOfLemWords</span><span class="p">[</span><span class="mi">6</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">25</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="create-the-bag-of-words">
+<h2>Create the bag-of-words<a class="headerlink" href="#create-the-bag-of-words" title="Permalink to this headline">¶</a></h2>
+<p>Gensim expects the data in a certain format in order to do topic modeling. First, we need to create a Python dictionary from our list of words. Then we need to translate the dictionary into a bag-of-words.</p>
+<p>But before any of that, we need to import Gensim and the corpora and models modules.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">gensim</span>
+<span class="kn">from</span> <span class="nn">gensim</span> <span class="kn">import</span> <span class="n">corpora</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can define a variable called dictionary. Gensim’s corpora module will map the words in each document to integer IDs, in other words, assigning each unique word in the corpus a corresponding number.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dictionary</span> <span class="o">=</span> <span class="n">corpora</span><span class="o">.</span><span class="n">Dictionary</span><span class="p">(</span><span class="n">listOfLemWords</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can check the ID of any token an our corpus.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#try looking up another word to find its ID</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dictionary</span><span class="o">.</span><span class="n">token2id</span><span class="p">[</span><span class="s1">&#39;broadway&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then, we define a new variable called corpus. Gensim has a module called doc2bow that will convert a document into the bag-of-words format. The BOW will be a list of tuples – consisting of word ID and frequency pairs – that represent each document in our corpus.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">corpus</span> <span class="o">=</span> <span class="p">[</span><span class="n">dictionary</span><span class="o">.</span><span class="n">doc2bow</span><span class="p">(</span><span class="n">text</span><span class="p">)</span> <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">listOfLemWords</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">corpus</span><span class="p">[</span><span class="mi">9</span><span class="p">][</span><span class="mi">0</span><span class="p">:</span><span class="mi">300</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="run-the-model-and-view-topics">
+<h2>Run the model and view topics<a class="headerlink" href="#run-the-model-and-view-topics" title="Permalink to this headline">¶</a></h2>
+<p>Gensim has a module called models for LDA topic modeling. We’ll import the models module and then create our topics.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gensim</span> <span class="kn">import</span> <span class="n">models</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>There are parameters that we have the option to set when creating the topic model. We’re using just couple here:</p>
+<ul class="simple">
+<li><p>num_topics: the number of topics our model will create. This is a parameter you can adjust based on your corpus size and the length of the documents. We are starting with 10 topics.</p></li>
+<li><p>passes: the number of times the algorithm will pass through the documents. A higher number is likely to yield higher quality topics, but will take more time to run.</p></li>
+</ul>
+<p>You can find the full list of available parameters on this webpage: <a class="reference external" href="https://radimrehurek.com/gensim/models/word2vec.html">https://radimrehurek.com/gensim/models/word2vec.html</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lda_model</span> <span class="o">=</span> <span class="n">gensim</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">ldamodel</span><span class="o">.</span><span class="n">LdaModel</span><span class="p">(</span><span class="n">corpus</span><span class="p">,</span> 
+                                           <span class="n">num_topics</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> 
+                                           <span class="n">id2word</span> <span class="o">=</span> <span class="n">dictionary</span><span class="p">,</span> 
+                                           <span class="n">passes</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The notation show_topics() will return the 10 most salient words in each of our topics.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">lda_model</span><span class="o">.</span><span class="n">show_topics</span><span class="p">()</span>
+<span class="c1">#try adding a topic number (e.g., 5) and topn= 20 to see twenty words in topic 5, for example show_topics(9, topn=20)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The code below will print a cleaner view of the top 20 words in our topics.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Topic &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">lda_model</span><span class="o">.</span><span class="n">show_topic</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">topn</span><span class="o">=</span><span class="mi">20</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">j</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="visualize-topics">
+<h2>Visualize topics<a class="headerlink" href="#visualize-topics" title="Permalink to this headline">¶</a></h2>
+<p>Visualizing our topics will help us make sense of them. The code blocks below are a bit more complicated than what we saw above.</p>
+<p>First, let’s import the modules we’ll use in this section.</p>
+<ul class="simple">
+<li><p>Altair: visualization library for Python</p></li>
+<li><p>ipywidgets: will make our visualizations interactive</p></li>
+<li><p>Pandas: common Python library for data science that is useful when working with tabular data</p></li>
+<li><p>Matplotlib: a very popular Python visualization library</p></li>
+<li><p>Seaborn: another Python visualization library</p></li>
+</ul>
+<p>Where you see the statements written “import ______ as ____”, that’s a way to abbreviate a module’s name, mostly for the convenience of not typing the full name later. The abbreviations used here are common, so you may seem them if you look at other code in the future.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>pyLDAvis is another frequently used Python library for visualizing the outputs of Gensim topic models. The code is a bit simpler than what we’re using here, but we think these custom visualizations are nicer! If you wanted to use pyLDAvis, you’d need to run:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#import pyLDAvis</span>
+<span class="c1">#import pyLDAvis.gensim_models</span>
+<span class="c1">#pyLDAvis.enable_notebook()</span>
+<span class="c1">#vis = pyLDAvis.gensim_models.prepare(ldamodel, corpus, id2word, mds=&quot;mmds&quot;, R=30)</span>
+<span class="c1">#vis</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s get back to our visualiations. First we want to create a list of just the tokens in the topics.</p>
+<p>Here’s what’s happening below:</p>
+<ul class="simple">
+<li><p>Create a variable called topics and set it to show_topics</p></li>
+<li><p>Create an empty list called topic_words</p></li>
+<li><p>Iterate through topics and append the tokens to the topic_words list</p></li>
+</ul>
+<p>At the end, we print topic_words</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">topics</span><span class="o">=</span><span class="n">lda_model</span><span class="o">.</span><span class="n">show_topics</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span><span class="n">formatted</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">topic_words</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">topics</span><span class="p">:</span>
+    <span class="n">topic_words</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">wd</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">wd</span> <span class="ow">in</span> <span class="n">topic</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">topic_words</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then, we want to create a Pandas dataframe from our corpus. Try not to worry to much about the syntax below, which mixes in Pandas syntax that we haven’t yet seen. The important thing to know is that we are creating a dataframe, which you can think about like superpowered, code-accessible spreadsheet. Our dataframe will include the probability for each topic in each file in our corpus.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ntopics</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">dftopics</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;corpus&#39;</span><span class="p">:</span><span class="n">corpus</span><span class="p">})</span>
+<span class="n">filenames</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">topiclist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">topicprob</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">topiccorpus</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">dftopics</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">probs</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">ntopics</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">lda_model</span><span class="o">.</span><span class="n">get_document_topics</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;corpus&#39;</span><span class="p">]):</span>
+        <span class="n">probs</span><span class="p">[</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">ntopics</span><span class="p">):</span>
+        <span class="n">topiccorpus</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;file&#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+        <span class="n">topiclist</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">j</span><span class="p">)</span>
+        <span class="n">topicprob</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">probs</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+<span class="n">topic_dataframe</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;corpus&#39;</span><span class="p">:</span><span class="n">topiccorpus</span><span class="p">,</span><span class="s1">&#39;topic&#39;</span><span class="p">:</span><span class="n">topiclist</span><span class="p">,</span><span class="s1">&#39;prob&#39;</span><span class="p">:</span><span class="n">topicprob</span><span class="p">})</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If we call the dataframe, then we can get a feel for the tabular format.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">topic_dataframe</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Next we can sort the dataframe so that it goes in ascending order by topic and probability.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">topic_dataframe</span> <span class="o">=</span> <span class="n">topic_dataframe</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;topic&#39;</span><span class="p">,</span><span class="s1">&#39;prob&#39;</span><span class="p">],</span><span class="n">ascending</span><span class="o">=</span><span class="p">[</span><span class="kc">True</span><span class="p">,</span><span class="kc">False</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The following code is a lot to digest, but it will take our dataframe and generate an interactive visualization showing the dispersion of topics within our issues of the Liberator.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ntopics</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">numwords</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;topic&#39;</span><span class="p">],</span> <span class="n">bind</span><span class="o">=</span><span class="s1">&#39;legend&#39;</span><span class="p">)</span>
+<span class="n">selopac</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;topic&#39;</span><span class="p">],</span><span class="n">bind</span><span class="o">=</span><span class="s1">&#39;legend&#39;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">topicbars</span><span class="p">(</span><span class="n">Topic</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">Topic</span>
+    <span class="n">topics_df_sorted</span> <span class="o">=</span> <span class="n">topic_dataframe</span><span class="p">[</span><span class="n">topic_dataframe</span><span class="p">[</span><span class="s1">&#39;topic&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">a</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;topic&#39;</span><span class="p">,</span><span class="s1">&#39;prob&#39;</span><span class="p">],</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">topics_df_sorted</span> <span class="o">=</span> <span class="n">topics_df_sorted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">topic_dataframe</span><span class="p">[</span><span class="n">topic_dataframe</span><span class="p">[</span><span class="s1">&#39;topic&#39;</span><span class="p">]</span><span class="o">!=</span><span class="n">a</span><span class="p">])</span>
+
+    <span class="n">x</span><span class="o">=</span><span class="n">lda_model</span><span class="o">.</span><span class="n">show_topics</span><span class="p">(</span><span class="n">num_topics</span><span class="o">=</span><span class="n">ntopics</span><span class="p">,</span> <span class="n">num_words</span><span class="o">=</span><span class="n">numwords</span><span class="p">,</span><span class="n">formatted</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">topic_words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+        <span class="n">topic_words</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">wd</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">wd</span> <span class="ow">in</span> <span class="n">topic</span><span class="p">[</span><span class="mi">1</span><span class="p">]])</span>
+    <span class="n">topics_df_sorted</span><span class="p">[</span><span class="s1">&#39;topicwords&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">row</span> <span class="ow">in</span> <span class="n">topics_df_sorted</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="n">topics_df_sorted</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39;topicwords&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">topic_words</span><span class="p">[</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;topic&#39;</span><span class="p">]])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">+</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">topic_words</span><span class="p">[</span><span class="n">Topic</span><span class="p">])</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+    
+    <span class="n">chart</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">topics_df_sorted</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;sum(prob)&#39;</span><span class="p">,</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;corpus&#39;</span><span class="p">,</span><span class="n">sort</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
+        <span class="n">color</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;topic:N&#39;</span><span class="p">),</span>
+        <span class="n">order</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Order</span><span class="p">(</span><span class="s1">&#39;corpus&#39;</span><span class="p">),</span>
+        <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selopac</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)),</span>
+        <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;corpus&#39;</span><span class="p">,</span> <span class="s1">&#39;topic&#39;</span><span class="p">,</span> <span class="s1">&#39;prob&#39;</span><span class="p">,</span> <span class="s1">&#39;topicwords&#39;</span><span class="p">]</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">selopac</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">chart</span>
+
+<span class="n">ipywidgets</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">topicbars</span><span class="p">,</span><span class="n">Topic</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="n">ntopics</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then we can modify our dataframe so that topic is now rendered as a column. This will set us up for another visualization that will show how prevalent each topic is in each issue of the Liberator.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">topic_dataframe</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;corpus&#39;</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;topic&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;prob&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s integrate that code above into the code below to create a new dataframe where the words in each topic will now be brought in, instead of the topic number. Then we’ll call the new dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ntopics</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">numwords</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">df_topic_words</span> <span class="o">=</span> <span class="n">topic_dataframe</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s1">&#39;corpus&#39;</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;topic&#39;</span><span class="p">,</span><span class="n">values</span><span class="o">=</span><span class="s1">&#39;prob&#39;</span><span class="p">)</span>
+
+<span class="n">x</span><span class="o">=</span><span class="n">lda_model</span><span class="o">.</span><span class="n">show_topics</span><span class="p">(</span><span class="n">num_topics</span><span class="o">=</span><span class="n">ntopics</span><span class="p">,</span> <span class="n">num_words</span><span class="o">=</span><span class="n">numwords</span><span class="p">,</span><span class="n">formatted</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">topic_words</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">topic</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+    <span class="n">topic_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">wd</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">wd</span> <span class="ow">in</span> <span class="n">topic</span><span class="p">[</span><span class="mi">1</span><span class="p">]]))</span>
+<span class="n">df_topic_words</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="n">topic_words</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_topic_words</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">80</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">heatmap</span><span class="p">(</span><span class="n">df_topic_words</span><span class="p">,</span>
+                 <span class="n">cmap</span><span class="o">=</span><span class="s2">&quot;YlGnBu&quot;</span><span class="p">,</span>
+                 <span class="n">annot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">bottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">labelbottom</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">top</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">labeltop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">yticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Day2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="01-TextAnalysis.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Overview</p>
+            </div>
+        </a>
+    </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By CaliDHRI<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

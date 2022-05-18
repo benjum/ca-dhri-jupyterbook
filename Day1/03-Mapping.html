@@ -1,0 +1,918 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualizing Black Histories in California &#8212; CaliDHRI Book</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Overview" href="../Day2/01-TextAnalysis.html" />
+    <link rel="prev" title="Week 1: Jupyter and Python" href="02-JupyterandPython.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/cropped-cropped-final_CALIDRHI_logo-1.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">CaliDHRI Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Welcome to the Cali-DHRI Jupyter Book
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Day 1
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="01-NavigatingTheNotebook.html">
+   Navigating Jupyter Lab
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02-JupyterandPython.html">
+   Week 1: Jupyter and Python
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Visualizing Black Histories in California
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Day 2
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Day2/01-TextAnalysis.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Day2/02-TopicModeling-Participant.html">
+   CaliDHRI Day 2: Afternoon
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/Day1/03-Mapping.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/benjum/ca-dhri-jupyterbook"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/benjum/ca-dhri-jupyterbook/issues/new?title=Issue%20on%20page%20%2FDay1/03-Mapping.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/benjum/ca-dhri-jupyterbook/master?urlpath=tree/Day1/03-Mapping.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Visualizing Black Histories in California
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mapping-in-python">
+     Mapping in Python
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-spatial-data">
+     Finding spatial data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#using-geopandas">
+     Using geopandas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#loading-data">
+     Loading data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-view">
+     Data view
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#choropleth-maps">
+     Choropleth maps
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#user-defined-bins">
+       User defined bins
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#green-book">
+   Green Book
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multiple-layers">
+     Multiple layers
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mapping-greenbook-locations-with-enviroscreen-data">
+     Mapping greenbook locations with enviroscreen data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#zoom-in-to-a-specific-layer">
+     Zoom in to a specific layer
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#redlining">
+   Redlining
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#an-la-example">
+     An LA example
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-maps">
+   Interactive maps
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="visualizing-black-histories-in-california">
+<h1>Visualizing Black Histories in California<a class="headerlink" href="#visualizing-black-histories-in-california" title="Permalink to this headline">¶</a></h1>
+<p>April 27, 2022
+<img src="images/map1.png"></p>
+<div class="section" id="mapping-in-python">
+<h2>Mapping in Python<a class="headerlink" href="#mapping-in-python" title="Permalink to this headline">¶</a></h2>
+<img src="https://geopandas.org/en/stable/_static/geopandas_logo_web.svg" width=600>
+<p>We start by importing a new module <code class="docutils literal notranslate"><span class="pre">geopandas</span></code>. This is a pretty high level geospatial library, widely used by spatial data scientists all over the world. Don’t worry about it too much for now, but know that it allows us to import a variety of spatial data formats, and plot them on a map.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://geopandas.readthedocs.io/en/latest/gallery/index.html">geopandas documentation</a></p></li>
+</ul>
+</div>
+<div class="section" id="finding-spatial-data">
+<h2>Finding spatial data<a class="headerlink" href="#finding-spatial-data" title="Permalink to this headline">¶</a></h2>
+<img src="https://carto.com/img/definitions/spatial-analysis-languages.2906f68c.png" width=600>
+<p>Spatial data comes in many forms. Most popular are:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://doc.arcgis.com/en/arcgis-online/reference/shapefiles.htm">Shapefiles</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/GeoJSON">geojson</a></p>
+<ul>
+<li><p><a class="reference external" href="https://geojson.io/">geojson.io</a></p></li>
+</ul>
+</li>
+<li><p>csv files with latitude longitude columns</p></li>
+</ul>
+</div>
+<div class="section" id="using-geopandas">
+<h2>Using geopandas<a class="headerlink" href="#using-geopandas" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">import</span></code> geopandas and give it an alias <code class="docutils literal notranslate"><span class="pre">gpd</span></code></p></li>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">read_file</span></code> to bring spatial data to your notebook</p></li>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">plot</span></code> to visualize</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import geopandas</span>
+<span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="mi">24</span><span class="n">b60cf6aa92</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># import geopandas</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">geopandas</span> <span class="k">as</span> <span class="nn">gpd</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;geopandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="loading-data">
+<h2>Loading data<a class="headerlink" href="#loading-data" title="Permalink to this headline">¶</a></h2>
+<img src="https://oehha.ca.gov/sites/default/files/media/files/images/logo/calenviroscreenlogosmaller.png">
+<p>Let’s find some data to bring in.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://oehha.ca.gov/calenviroscreen">https://oehha.ca.gov/calenviroscreen</a></p></li>
+<li><p><a class="reference external" href="https://oehha.ca.gov/calenviroscreen/maps-data/download-data">About the data</a></p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load spatial data into a variable &quot;cal&quot;</span>
+<span class="n">cal</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;data/calenviroscreen40shpf2021shp.zip&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Once the data is loaded, you can visualize it: <code class="docutils literal notranslate"><span class="pre">.plot</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># map it</span>
+<span class="n">cal</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s make the map bigger by adding an argument: <code class="docutils literal notranslate"><span class="pre">figsize</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># map it, but larger</span>
+<span class="n">cal</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="data-view">
+<h2>Data view<a class="headerlink" href="#data-view" title="Permalink to this headline">¶</a></h2>
+<p>Map layers (shapefiles, geojson files, etc) come with “attribute” data. You can look at the data through pandas commands.</p>
+<p>First, look at the data fields available: <code class="docutils literal notranslate"><span class="pre">.info</span></code></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># show info about the data</span>
+<span class="n">cal</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># look at the first 5 rows using .head</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># look at the last 5 rows using .tail</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># look at a single random record using .sample</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot a single random census tract (hint: chain multiple commands!)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="choropleth-maps">
+<h2>Choropleth maps<a class="headerlink" href="#choropleth-maps" title="Permalink to this headline">¶</a></h2>
+<img src="https://dabrownstein.files.wordpress.com/2014/11/1861-slave-population-map.png" width=600>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dabrownstein.com/2013/02/22/mapping-slavery-in-1860/">Source: Mapping Slavery in the United States in 1860</a></p></li>
+</ul>
+<p>Otherwise known as <em>thematic</em> maps, choropleth maps are a way to visualize <em>polygonial</em> data with colors. In other words, each region is colored a certain way, based on some criteria you define.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://geopandas.org/en/stable/gallery/choropleths.html">geopandas examples</a></p></li>
+</ul>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">.plot</span></code> function, we can add <em>arguments</em> to make it a choropleth map.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">column</span></code> defines which attribute you want to use to color the map</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scheme</span></code> defines how you want the colors to be distributed</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">quantiles</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NaturalBreaks</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">UserDefined</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">legend</span></code> true or false</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cmap</span></code> choose a <a class="reference external" href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">color scheme</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">k</span></code> how many bins?</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a layer from the cal enviroscreen data</span>
+<span class="n">layer1</span> <span class="o">=</span> <span class="n">cal</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span>
+                  <span class="n">column</span><span class="o">=</span><span class="s1">&#39;PovertyP&#39;</span><span class="p">,</span> 
+                  <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;quantiles&#39;</span><span class="p">,</span> 
+                  <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+                  <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;OrRd&#39;</span><span class="p">,</span>
+                  <span class="n">k</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># give it a title</span>
+<span class="n">layer1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Poverty in California&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;25&#39;</span><span class="p">,</span> <span class="s1">&#39;fontweight&#39;</span> <span class="p">:</span> <span class="s1">&#39;3&#39;</span><span class="p">})</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="n">layer1</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-success">
+    <h2> Try this!</h2>
+    In the code cell that created the map above, what happens when you do the following?
+    <li>change the <code>k</code> value to 2</li>
+    <li>change the <code>column</code> value to a different attribute</li>
+    <li>change the <code>cmap</code> value to a different <a href="https://matplotlib.org/stable/tutorials/colors/colormaps.html">color scheme</a></li>
+</div><div class="section" id="user-defined-bins">
+<h3>User defined bins<a class="headerlink" href="#user-defined-bins" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">map</span> <span class="o">=</span> <span class="n">cal</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span>
+                  <span class="n">column</span><span class="o">=</span><span class="s1">&#39;AsthmaP&#39;</span><span class="p">,</span> 
+                  <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+                  <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greens&#39;</span><span class="p">,</span> 
+                  <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;user_defined&#39;</span><span class="p">,</span> 
+                  <span class="n">classification_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;bins&#39;</span><span class="p">:[</span><span class="mi">80</span><span class="p">,</span><span class="mi">100</span><span class="p">]})</span>
+
+<span class="c1"># give it a title</span>
+<span class="nb">map</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Asthma in California&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;25&#39;</span><span class="p">,</span> <span class="s1">&#39;fontweight&#39;</span> <span class="p">:</span> <span class="s1">&#39;3&#39;</span><span class="p">})</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="nb">map</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-success"><h2>It's your turn!</h2>
+    Create a map with different attributes, colors, titles, etc. Be creative! And post your final output to the <a href="https://docs.google.com/document/d/1NYIlXmgWLL3nPDflwI-7PcjRjD95-1im5b8ecnvS5fw/edit?usp=sharing">class gallery</a>.
+</div></div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="green-book">
+<h1>Green Book<a class="headerlink" href="#green-book" title="Permalink to this headline">¶</a></h1>
+<img src="images/gb1.png" width=800><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># bring in greenbook data csv file</span>
+<span class="n">green</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;data/47greenbookla.csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># convert the csv file into a &quot;geodataframe&quot;</span>
+<span class="n">green</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">green</span><span class="p">,</span> 
+                         <span class="n">geometry</span><span class="o">=</span><span class="n">gpd</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">green</span><span class="o">.</span><span class="n">Longitude</span><span class="p">,</span> <span class="n">green</span><span class="o">.</span><span class="n">Latitude</span><span class="p">),</span> 
+                         <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;EPSG:4326&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">green</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">green</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># bigger, styled</span>
+<span class="nb">map</span> <span class="o">=</span> <span class="n">green</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;Type&#39;</span><span class="p">,</span><span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># give it a title</span>
+<span class="nb">map</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Greenbook Locations in LA&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;25&#39;</span><span class="p">,</span> <span class="s1">&#39;fontweight&#39;</span> <span class="p">:</span> <span class="s1">&#39;3&#39;</span><span class="p">})</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="nb">map</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="multiple-layers">
+<h2>Multiple layers<a class="headerlink" href="#multiple-layers" title="Permalink to this headline">¶</a></h2>
+<p>We have learned how to visualize single data layers. But what if we wanted to map <em>multiple</em> layers? To do so, we introduce two new libraries to our project.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://matplotlib.org/">Maplotlib</a> allows us to create multiple plots, or multiple layers on a single plot</p></li>
+<li><p><a class="reference external" href="https://contextily.readthedocs.io/en/latest/intro_guide.html">Contextily</a> allows us to add a basemap to our map</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">contextily</span> <span class="k">as</span> <span class="nn">cx</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The syntax to create a plot with matplotlib is a bit more complicated. But get the hang of it, and you will learn how to create layered maps in no time!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the &quot;subplot&quot;</span>
+<span class="c1"># note that &quot;ax&quot; is the single plot&#39;s identifier</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># add the </span>
+<span class="n">green</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="c1"># add this layer to the &quot;ax&quot; plot</span>
+            <span class="n">column</span><span class="o">=</span><span class="s1">&#39;Type&#39;</span><span class="p">,</span>
+            <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="n">markersize</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># give it a title</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Greenbook Locations in LA&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s1">&#39;fontweight&#39;</span> <span class="p">:</span> <span class="mi">3</span><span class="p">})</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">()</span>
+
+<span class="c1"># add a basemap</span>
+<span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="n">green</span><span class="o">.</span><span class="n">crs</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="mapping-greenbook-locations-with-enviroscreen-data">
+<h2>Mapping greenbook locations with enviroscreen data<a class="headerlink" href="#mapping-greenbook-locations-with-enviroscreen-data" title="Permalink to this headline">¶</a></h2>
+<p>Check: are the data layers in the same projection?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cal</span><span class="o">.</span><span class="n">crs</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">green</span><span class="o">.</span><span class="n">crs</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># project greenbook data to WGS 84</span>
+<span class="n">cal</span><span class="o">=</span><span class="n">cal</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="mi">4326</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check the crs now</span>
+<span class="n">cal</span><span class="o">.</span><span class="n">crs</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the &quot;subplot&quot;</span>
+<span class="c1"># note that &quot;ax&quot; is the single plot&#39;s identifier</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># add the enviroscreen layer</span>
+<span class="n">cal</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span> <span class="c1"># this puts this layer in the &quot;ax&quot; plot</span>
+            <span class="n">column</span><span class="o">=</span><span class="s1">&#39;AsthmaP&#39;</span><span class="p">,</span> 
+            <span class="n">legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+            <span class="n">cmap</span><span class="o">=</span><span class="s1">&#39;Greens&#39;</span><span class="p">,</span> 
+            <span class="n">scheme</span><span class="o">=</span><span class="s1">&#39;user_defined&#39;</span><span class="p">,</span> 
+            <span class="n">classification_kwds</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;bins&#39;</span><span class="p">:[</span><span class="mi">80</span><span class="p">,</span><span class="mi">100</span><span class="p">]})</span>
+
+<span class="c1"># add greenbook locations</span>
+<span class="n">green</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+            <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+            <span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;Type&#39;</span><span class="p">,</span>
+            <span class="n">legend</span><span class="o">=</span><span class="kc">True</span>
+          <span class="p">)</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="zoom-in-to-a-specific-layer">
+<h2>Zoom in to a specific layer<a class="headerlink" href="#zoom-in-to-a-specific-layer" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the &quot;subplot&quot;</span>
+<span class="c1"># note that &quot;ax&quot; is the single plot&#39;s identifier</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># add the enviroscreen layer</span>
+<span class="n">cal</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+          <span class="n">ax</span> <span class="o">=</span> <span class="n">ax</span><span class="p">,</span>
+          <span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;AsthmaP&#39;</span><span class="p">,</span> 
+          <span class="n">cmap</span> <span class="o">=</span> <span class="s1">&#39;Greens&#39;</span><span class="p">,</span> 
+          <span class="n">scheme</span> <span class="o">=</span> <span class="s1">&#39;user_defined&#39;</span><span class="p">,</span> 
+          <span class="n">alpha</span> <span class="o">=</span> <span class="mf">0.5</span><span class="p">,</span>
+          <span class="n">classification_kwds</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;bins&#39;</span><span class="p">:[</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">]})</span>
+
+<span class="c1"># add the greenbook locations</span>
+<span class="n">green</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span> <span class="o">=</span> <span class="n">ax</span><span class="p">,</span>
+           <span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;Type&#39;</span><span class="p">,</span>
+           <span class="n">markersize</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+           <span class="n">legend</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># get the bounding box of the greenbook data points</span>
+<span class="n">minx</span><span class="p">,</span> <span class="n">miny</span><span class="p">,</span> <span class="n">maxx</span><span class="p">,</span> <span class="n">maxy</span> <span class="o">=</span> <span class="n">green</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">total_bounds</span>
+
+<span class="c1"># set the extent of the map to these bounds</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">(</span><span class="n">minx</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">maxx</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">)</span> <span class="c1"># added/substracted value is to give some margin around total bounds</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">(</span><span class="n">miny</span> <span class="o">-</span> <span class="mf">0.1</span><span class="p">,</span> <span class="n">maxy</span> <span class="o">+</span> <span class="mf">0.1</span><span class="p">)</span>
+
+<span class="c1"># give it a title</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Greenbook Locations in LA</span><span class="se">\n</span><span class="s1">(green = more than 50% Asthma regions)&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;20&#39;</span><span class="p">,</span> <span class="s1">&#39;fontweight&#39;</span> <span class="p">:</span> <span class="s1">&#39;3&#39;</span><span class="p">})</span>
+
+<span class="c1"># add a basemap</span>
+<span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="n">green</span><span class="o">.</span><span class="n">crs</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="redlining">
+<h1>Redlining<a class="headerlink" href="#redlining" title="Permalink to this headline">¶</a></h1>
+<img src="images/red1.png" width=600>
+<ul class="simple">
+<li><p><a class="reference external" href="https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58">Mapping Inequality Maproom by University of Richmond</a></p></li>
+<li><p><a class="reference external" href="https://dsl.richmond.edu/panorama/redlining/#loc=11/37.81/-122.369&amp;city=oakland-ca&amp;area=D9&amp;adview=full&amp;text=downloads">Downloadable data</a></p></li>
+</ul>
+<div class="section" id="an-la-example">
+<h2>An LA example<a class="headerlink" href="#an-la-example" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">red</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s1">&#39;https://dsl.richmond.edu/panorama/redlining/static/downloads/geojson/CALosAngeles1939.geojson&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">red</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># set up the plot</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># add the redlining data</span>
+<span class="n">red</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+        <span class="n">column</span><span class="o">=</span><span class="s1">&#39;holc_grade&#39;</span><span class="p">,</span>
+        <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+         <span class="p">)</span>
+
+<span class="c1"># give it a title</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Redlining in Los Angeles&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;20&#39;</span><span class="p">,</span> <span class="s1">&#39;fontweight&#39;</span> <span class="p">:</span> <span class="s1">&#39;3&#39;</span><span class="p">})</span>
+
+<span class="c1"># add a basemap</span>
+<span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="n">green</span><span class="o">.</span><span class="n">crs</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># filter data to only show where holc_grade is &quot;D&quot;</span>
+<span class="n">D</span> <span class="o">=</span> <span class="n">red</span><span class="p">[</span><span class="n">red</span><span class="p">[</span><span class="s1">&#39;holc_grade&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;D&#39;</span><span class="p">]</span>
+<span class="n">D</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+
+<span class="c1"># plot &quot;D&quot; redlined areas</span>
+<span class="n">D</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+        <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
+        <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span>
+         <span class="p">)</span>
+
+<span class="c1"># add the greenbook locations</span>
+<span class="n">green</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+          <span class="n">ax</span><span class="o">=</span><span class="n">ax</span><span class="p">,</span>
+          <span class="n">column</span> <span class="o">=</span> <span class="s1">&#39;Type&#39;</span><span class="p">,</span>
+          <span class="n">markersize</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span>
+          <span class="n">legend</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># give it a title</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Redlining Grade &quot;D&quot; and Greenbook Locations in LA&#39;</span><span class="p">,</span> <span class="n">fontdict</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;fontsize&#39;</span><span class="p">:</span> <span class="s1">&#39;20&#39;</span><span class="p">,</span> <span class="s1">&#39;fontweight&#39;</span> <span class="p">:</span> <span class="s1">&#39;3&#39;</span><span class="p">})</span>
+
+<span class="c1"># add a basemap</span>
+<span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="n">green</span><span class="o">.</span><span class="n">crs</span><span class="o">.</span><span class="n">to_string</span><span class="p">())</span>
+
+<span class="c1"># turn the axes off</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_axis_off</span><span class="p">();</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-success"><h2>It's your turn!</h2>
+    Create a map from a different redlining location and post your final output to the <a href="https://docs.google.com/document/d/1NYIlXmgWLL3nPDflwI-7PcjRjD95-1im5b8ecnvS5fw/edit?usp=sharing">class gallery</a>.
+</div></div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="interactive-maps">
+<h1>Interactive maps<a class="headerlink" href="#interactive-maps" title="Permalink to this headline">¶</a></h1>
+<p>A fun teaser!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_mapbox</span><span class="p">(</span><span class="n">green</span><span class="p">,</span>
+                        <span class="n">lat</span><span class="o">=</span><span class="n">green</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">y</span><span class="p">,</span>
+                        <span class="n">lon</span><span class="o">=</span><span class="n">green</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">x</span><span class="p">,</span>
+                        <span class="n">hover_name</span><span class="o">=</span><span class="s2">&quot;Type&quot;</span><span class="p">,</span>
+                        <span class="n">hover_data</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Type&#39;</span><span class="p">,</span><span class="s1">&#39;Name&#39;</span><span class="p">,</span><span class="s1">&#39;Street Address&#39;</span><span class="p">],</span>
+                        <span class="n">color</span><span class="o">=</span><span class="s2">&quot;Type&quot;</span><span class="p">,</span>
+                        <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+                        <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                       <span class="n">mapbox_style</span><span class="o">=</span><span class="s1">&#39;stamen-toner&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_traces</span><span class="p">(</span><span class="n">marker</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;size&#39;</span><span class="p">:</span> <span class="mi">15</span><span class="p">})</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./Day1"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="02-JupyterandPython.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Week 1: Jupyter and Python</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../Day2/01-TextAnalysis.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Overview</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By CaliDHRI<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
