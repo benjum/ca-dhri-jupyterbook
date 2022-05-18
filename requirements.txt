@@ -1,3 +1,9 @@
 jupyter-book
 matplotlib
 numpy
+nltk
+geopandas
+mapclassify
+contextily
+plotly
+gensim
