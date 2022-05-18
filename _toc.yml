@@ -1,0 +1,15 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Day 1
+    chapters:
+    - file: Day1/01-NavigatingTheNotebook.ipynb
+    - file: Day1/02-JupyterandPython.ipynb
+    - file: Day1/03-Mapping.ipynb
+  - caption: Day 2
+    chapters:
+    - file: Day2/01-TextAnalysis.ipynb
+    - file: Day2/02-TopicModeling-Participant.ipynb
